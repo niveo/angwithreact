@@ -9,7 +9,7 @@ import { LazyReactComponentDirective } from '../LazyReactComponentDirective';
   template: `<div [lazyReactComponent]="Select" [props]="selectProps"></div>`,
 })
 export class SelectReactComponent {
-  Select = () => import('antd').then((m) => m.Select);
+  Select = () => import('antd/lib/select').then((m) => m.default);
   selectProps: ComponentProps<any> = {
     onChange(v: any) {
       console.log(v);

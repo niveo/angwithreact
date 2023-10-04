@@ -11,7 +11,7 @@ export class ButtonReactComponent {
   Button = () => import('../button/AmsRCButton').then((m) => m.AmsRCButton);
 
   props: ComponentProps<any> = {
-    content: 'TESTE',
+    content: '<span class="anticon material-symbols-outlined">home</span>',
     size: 'large',
     style: { width: '50%' },
     type: 'primary',
